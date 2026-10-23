@@ -11,7 +11,7 @@
 <body>
 <main class="wrap">
 <header class="top"><div class="brand">◈ ScriptBridge</div><div class="topRight"><button class="danger" id="closeApp" title="Close this page. ScriptBridge has no background helper to stop.">Close page</button><span class="tag" id="modeTag">Browser edition · Basic checks</span></div></header>
-<div class="note" id="modeNote">This is the browser edition of ScriptBridge. It can open and save files in supported browsers and run basic checks, but it does not include Ruff or full language validation. For Ruff Python linting, download and run the Windows version. ScriptBridge does not send your code to GitHub; file editing and checks happen in your browser.</div>
+<div class="note" id="modeNote">This browser edition does not have every feature of the Windows version. GitHub Pages cannot run the local Ruff helper, so Python checks here are basic, not full linting. File editing and checks happen in your browser; ScriptBridge does not send your code to GitHub. For Ruff Python linting, use the Windows version.</div>
 <details class="quick"><summary>Quick start</summary><ol><li>Open or paste a script in the editor.</li><li>Select the script file with <b>Open existing script…</b>, or choose where to save with <b>Choose file to save…</b>.</li><li>Click <b>Paste / review AI script</b> to open Review proposed change, then click <b>Check script</b> for basic checks.</li><li>To use an AI update, copy the request, paste the complete reply in the review area, compare it, then accept or reject.</li><li>Click <b>Save now</b> or enable automatic updates. A recovery copy is kept in this browser before each save.</li></ol></details><div class="grid">
 <section class="card">
 <div class="bar"><h2>Script content</h2><span class="filename" id="fileLabel">No file selected</span></div>
@@ -65,5 +65,6 @@ window.addEventListener('beforeunload',e=>{if(dirty&&!autosave.checked){e.preven
 </script>
 </body>
 </html>
+
 
 

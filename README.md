@@ -11,9 +11,10 @@ This folder contains the static website version of ScriptBridge. It runs in the 
 
 ## Browser edition limits
 
-- Basic checks are hints, not full language validation. This edition does not include Ruff and does not run submitted scripts.
+- Basic checks are hints, not full language validation. This edition does not have every feature of the Windows version. GitHub Pages cannot run the local Ruff helper, so Python checks here are basic, not full linting. This edition does not run submitted scripts.
 - File open/save buttons need a supported browser, such as current Chrome or Edge. GitHub Pages serves over HTTPS, which allows the browser's file picker APIs where supported. The browser asks the visitor to choose and authorize files; scripts are edited on the visitor's device.
 - Browser storage, including saved-version history, stays in that browser on that device.
 - The Windows Ruff helper, its executable, and its launcher are intentionally not part of this website folder. GitHub Pages is static hosting and cannot run those Windows components.
 
 The downloadable Windows package remains separate in `ScriptBridge-rebuilt`.
+
